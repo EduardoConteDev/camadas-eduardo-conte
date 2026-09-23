@@ -38,6 +38,7 @@ D) A asserção I é uma proposição falsa, e a II é uma proposição verdadei
 E) As asserções I e II são proposições falsas.
 
 **Resposta:**
+A, pois não possui um new EmployeeService() na própria classe. Dessa forma podemos passar um service mokado para testes unitários
 
 **Justificativa (opcional):**
 
@@ -67,7 +68,8 @@ D) `res.send(\`<h1>${name} created</h1>\`)`
 E) `const net = gross - gross * 0.11`
 
 **Resposta:**
-
+E, pois nos slides dizem: service não conhece req, res. Validar formato é apresentação: "e-mail sem @" fica no DTO. 
+SQL é repository e o calculo deve ser no service.
 **Justificativa (opcional):**
 
 ---
@@ -95,7 +97,7 @@ D) I, II e IV, apenas.
 E) I, II, III e IV.
 
 **Resposta:**
-
+D
 **Justificativa (opcional):**
 
 ---
