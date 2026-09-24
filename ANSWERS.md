@@ -131,7 +131,7 @@ D) II e III, apenas.
 E) I, II e III.
 
 **Resposta:**
-
+B
 **Justificativa (opcional):**
 
 ---
@@ -155,7 +155,7 @@ D) A asserção I é uma proposição falsa, e a II é uma proposição verdadei
 E) As asserções I e II são proposições falsas.
 
 **Resposta:**
-
+C
 **Justificativa (opcional):**
 
 ---
@@ -173,7 +173,7 @@ c) cite os arquivos do seu projeto que seriam alterados para atendê-lo.
 (Até 10 linhas.)
 
 **Resposta:**
-
+O pedido que exige mais esforço é aplicar um INSS diferente por estado, pois muda a regra de cálculo. Essa alteração deve ocorrer no src/services/employee.service.ts, substituindo a constante fixa pelo cálculo baseado no estado da empresa, informação é disponível via src/repositories/company.repository.ts. O arquivo src/controllers/employee.controller.ts não precisa de alterações, sendo necessário apenas realizar os testes para validar as novas porcentagens de cada estado.
 ---
 
 ### Questão 7 (discursiva)
@@ -189,3 +189,5 @@ c) descreva como você corrigiu, ou como corrigiria.
 (Até 10 linhas.)
 
 **Resposta:**
+O erro mais próximo foi o tratamento de erros, a separação de responsabilidade de cada camada confundi um pouco.
+Em `src/controllers/employee.controller.ts` e `src/middlewares/error.middleware.ts`
